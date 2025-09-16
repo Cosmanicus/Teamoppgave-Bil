@@ -1,7 +1,7 @@
 
 // Updates html variable with two buttons inside moveCarButtons[]
 // Then calls updateview
-// Then 
+// Then makes holdButtonInterval
 function createButton() {
     let holdButtons = []
     
@@ -16,6 +16,8 @@ function createButton() {
         let direction = moveCarButtons[i];
         holdButtons[i] = document.getElementById(`holdButton${direction}`);
         let button = holdButtons[i];
+
+        // function that uses event listeners to check if a button is being held, released or left
         holdButtonInterval(button, direction);
     }
 
