@@ -1,3 +1,7 @@
 function updateView() {
-    appDiv.innerHTML = html
+    appDiv.innerHTML = /*HTML*/
+    `
+    <div>${createButton()}</div>
+    `
+    test();
 }

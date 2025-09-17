@@ -3,15 +3,21 @@
 // Then calls updateview
 // Then makes holdButtonInterval
 function createButton() {
-    let holdButtons = []
-    
+    let html = '';
+
     for (let i = 0; i < moveCarButtons.length; i ++) {
         let direction = moveCarButtons[i];
         html += /*HTML*/
         `<button class="moveCarButton" id="holdButton${direction}"></button>`;
     }
 
-    updateView();
+    console.log(html);
+
+    return html;
+}
+
+function test() {
+    let holdButtons = []
     for (let i = 0; i < moveCarButtons.length; i++) {
         let direction = moveCarButtons[i];
         holdButtons[i] = document.getElementById(`holdButton${direction}`);
@@ -21,10 +27,7 @@ function createButton() {
         holdButtonInterval(button, direction);
     }
 
-    console.log(html);
-    console.log(holdButtons)
-
-    html = '';
+    console.log(holdButtons);
 }
 
 // button Interval function

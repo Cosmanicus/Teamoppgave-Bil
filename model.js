@@ -1,6 +1,6 @@
 const appDiv = document.getElementById('appDiv')
 
-let html = '';
+// let html = '';
 const moveCarButtons = ['left', 'right']
 
 
