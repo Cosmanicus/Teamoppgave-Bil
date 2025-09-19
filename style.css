@@ -1,4 +1,17 @@
-.moveCarButton {
-    width: 64px;
+.carPartImage {
     height: 64px;
+}
+
+.CoolnessMeterBackground {
+    width: 300px;
+    height: 20px; 
+    border: 2px solid black;
+    background: #222;
+    text-align: center;
+}
+
+#ometer {
+    height: 100%;
+    width: 50%;
+    background: goldenrod
 }

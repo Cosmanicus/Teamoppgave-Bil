@@ -1,7 +1,7 @@
 function updateView() {
     appDiv.innerHTML = /*HTML*/
     `
-    <div>${createButton()}</div>
+    <div>${startFriendQuest()}</div>
+    <div>${generateCarPart()}</div>
     `
-    test();
 }
