@@ -65,11 +65,10 @@ function rejectCarPart(selectedCarPart) {
 // #region Coolness Meter
 function fillBar() {
     const reactionModifier = 2
-    if (progress < 100 && progress > 0) {
-      progress = carInventory.reduce((sum, part) => sum + part.coolness, 0);
-      coolness += progress
-      document.getElementById("ometer").style.width = progress + "%";
-    }
+    progress = carInventory.reduce((sum, part) => sum + part.coolness, 0);
+    coolness += progress
+    document.getElementById("ometer").style.width = progress + "%";
+    
     if (progress <= 0) {
       alert('You Lose!')
     }
@@ -80,11 +79,10 @@ function fillBar() {
 
 function emptyBar() {
     const reactionModifier = -2
-    if (progress < 100 && progress > 0) {
-      progress = carInventory.reduce((sum, part) => sum + part.coolness, 0);
-      coolness -= progress
-      document.getElementById("ometer").style.width = progress + "%";
-    }
+    progress = carInventory.reduce((sum, part) => sum + part.coolness, 0);
+    coolness -= progress
+    document.getElementById("ometer").style.width = progress + "%";
+    
     if (progress <= 0) {
       alert('You Lose!')
     }
