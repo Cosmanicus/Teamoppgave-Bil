@@ -26,8 +26,6 @@ function selectGreeting(selected){
       checkOutCar(false);
     }
 }
-
-
 //#endregion
 
 
@@ -72,7 +70,7 @@ function fillBar() {
       coolness += progress
       document.getElementById("ometer").style.width = progress + "%";
     }
-    else if (progress >= 0) {
+    if (progress >= 0) {
       alert('You Lose!')
     }
     else {
@@ -87,14 +85,14 @@ function emptyBar() {
       coolness -= progress
       document.getElementById("ometer").style.width = progress + "%";
     }
-    else if (progress >= 0) {
+    if (progress >= 0) {
       alert('You Lose!')
     }
     else {
       alert('You Win!')
     }
 }
- 
+
 function checkOutCar(Positive) {
     clearInterval(fillBar)
     clearInterval(emptyBar)
