@@ -70,7 +70,7 @@ function fillBar() {
       coolness += progress
       document.getElementById("ometer").style.width = progress + "%";
     }
-    if (progress >= 0) {
+    if (progress <= 0) {
       alert('You Lose!')
     }
     else {
@@ -85,7 +85,7 @@ function emptyBar() {
       coolness -= progress
       document.getElementById("ometer").style.width = progress + "%";
     }
-    if (progress >= 0) {
+    if (progress <= 0) {
       alert('You Lose!')
     }
     else {
